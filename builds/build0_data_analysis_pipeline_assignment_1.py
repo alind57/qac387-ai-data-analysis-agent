@@ -26,7 +26,7 @@ B) multiple_linear_regression(df, outcome, predictors=None)
         {
         "outcome": ...,
         "predictors": [...],
-        "n_rows_used": ...,
+        "n_rows_used": ...,da
         "r_squared": ...,
         "adj_r_squared": ...,
         "coefficients": {predictor: coef, ...},
@@ -36,7 +36,7 @@ B) multiple_linear_regression(df, outcome, predictors=None)
 HOW TO RUN (example): You can copy and paste this command (all one line) in your terminal after
 replacing Target_Column, Outcome_Column, Predictor1, Predictor2 with actual column names from your dataset:
 
-python builds/Build0_data_analysis_pipeline_assignment_1.py --data data/penguins.csv --target Target_Column --outcome Outcome_Column --predictors Predictor1,Predictor2 --report_dir reports/
+python /Users/akivalind/Downloads/akivalind/PythonProjects/qac387-ai-data-analysis-agent/builds/build0_data_analysis_pipeline_assignment_1.py --data /Users/akivalind/Downloads/akivalind/PythonProjects/qac387-ai-data-analysis-agent/data/penguins.csv --target island --outcome bill_depth_mm --predictors bill_length_mm,flipper_length_mm --report_dir reports/
 
 
 Outputs will be written to:
