@@ -161,14 +161,14 @@ def build_chain(
     if memory:
         prompt = ChatPromptTemplate.from_messages(
             [
-                ("system", _________),
+                ("system", SYSTEM_PROMPT),
                 ("human", "Dataset schema:\n{schema_text}"),
                 MessagesPlaceholder(variable_name="history"),
                 ("human", "User question:\n{user_query}"),
             ]
         )
 
-        base_chain = prompt | ______ | StrOutputParser()
+        base_chain = prompt | llm | StrOutputParser()
 
         history = InMemoryChatMessageHistory()
         chain_with_history = RunnableWithMessageHistory(
